@@ -114,7 +114,7 @@ def main():
     raj_logo()  # Display logo
     show_termux_message()  # Show the custom message
 
-    pastebin_url = "https://pastebin.com/xLBwFnC6"  # URL of the pastebin containing the password
+    pastebin_url = "https://pastebin.com/xD9y7aFg"  # URL of the pastebin containing the password
 
     # Fetch password from Pastebin
     correct_password = fetch_password_from_pastebin(pastebin_url)
@@ -122,7 +122,7 @@ def main():
     # Password validation
     print(Fore.CYAN + "[+] Please enter the password to proceed..")
     
-    entered_password = input(Fore.GREEN + "[+] Enter Password: ").strip()
+    entered_password = input(Fore.GREEN + "[+] xD9y7afg: ").strip()
 
     if entered_password != correct_password:
         print(Fore.RED + "[x] incorrect password.Exiting program.")
