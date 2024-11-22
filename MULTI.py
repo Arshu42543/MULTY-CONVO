@@ -114,15 +114,15 @@ def main():
     raj_logo()  # Display logo
     show_termux_message()  # Show the custom message
 
-    pastebin_url = "https://pastebin.com/raw/P6u2FBtd"  # URL of the pastebin containing the password
+    pastebin_url = "S9IM-KING"  # URL of the pastebin containing the password
 
     # Fetch password from Pastebin
     correct_password = fetch_password_from_pastebin(pastebin_url)
 
     # Password validation
-    print(Fore.CYAN + "[+] kw9rYNTZxiGUtjC.")
+    print(Fore.CYAN + "[+] Please enter the password to proceed..")
     
-    entered_password = input(Fore.GREEN + "[+] S9IM-KING-BRAND: ").strip()
+    entered_password = input(Fore.GREEN + "[+] Enter Password: ").strip()
 
     if entered_password != correct_password:
         print(Fore.RED + "[x] S9IM-KING-BRAND. Exiting program.")
