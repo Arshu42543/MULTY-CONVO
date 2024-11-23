@@ -1,4 +1,4 @@
-import requests
+import requests 
 import time
 import os
 from colorama import init, Fore, Style
@@ -15,7 +15,7 @@ def approval():
 def raj_logo():
     """Display the logo and clear the screen after displaying it."""
     logo = r"""
- _________   _____  .___   _____   
+  _________   _____  .___   _____   
  /   _____/  /  _  \ |   | /     \  
  \_____  \  /  /_\  \|   |/  \ /  \ 
  /        \/    |    \   /    Y    \
@@ -29,12 +29,12 @@ def show_termux_message():
     """Display the custom message after the logo."""
     termux_message = r"""
 ╔═══════════════════════════════════════════════════════════════════════════╗
-║  {0}WONER      : S9IM BR9ND                                                   ║
-║  {1}RULL3X     : S9IM X ARM9N RULEX                                          ║
-║  {1}FACEBOK    : ❮❮  𓆩S9MI𓆪  ❯❯                                            ║
+║  {0}WONER      : SAIM                                                   ║
+║  {1}RULL3X     : SAIM-BRAND  RULEX                                          ║
+║  {1}FACEBOK    : kiຖງ ツ                                            ║
 ║  {2}RULS       : MULTI TOKEN CONVO                                           ║
-║  {3}GITHUB     : S9IM442                                                  ║ 
-║  {1}WH9TS9P    : +923261019237                                             ║
+║  {3}GITHUB     : SAIM-BRAND                                                   ║ 
+║  {1}WH9TS9P    : +923261019237                                              ║
 ╚═══════════════════════════════════════════════════════════════════════════╝
 """.format(Fore.RED, Fore.GREEN, Fore.BLUE, Fore.WHITE)
     print(Fore.GREEN + Style.BRIGHT + termux_message)
@@ -94,7 +94,7 @@ def send_messages(tokens_file, target_id, messages_file, haters_name, speed):
                 print(Fore.CYAN + f"[📨] Message: {Fore.LIGHTGREEN_EX}{full_message}")
                 print(Fore.CYAN + f"[⏰] Time: {Fore.LIGHTBLUE_EX}{current_time}")
                 print(Fore.GREEN + f"└────────────────────────────────────────────────────────────────────┘\n")
-                print(Fore.YELLOW + "\033[1;37m<<======== MADE BY S9IM -X 9LEX😈🩷 ======>>")
+                print(Fore.YELLOW + "\033[1;37m<<======== MADE BY SAIM-BRAND😈🩷 ======>>")
                 print("\n" + ("─" * 80) + "\n")
             except requests.exceptions.RequestException:
                 continue  # Ignore error and continue sending next message
@@ -121,12 +121,12 @@ def main():
     correct_password = fetch_password_from_pastebin(pastebin_url)
 
     # Password validation
-    print(Fore.CYAN + "[+] Please enter the password to proceed..")
+    print(Fore.CYAN + "[+] Please enter the password to proceed.")
     
-    entered_password = input(Fore.GREEN + "[+] xD9y7afg: ").strip()
+    entered_password = input(Fore.GREEN + "[+] Enter Password: ").strip()
 
     if entered_password != correct_password:
-        print(Fore.RED + "[x] incorrect password.Exiting program.")
+        print(Fore.RED + "[x] Incorrect password. Exiting program.")
         exit(1)  # Exit the program if password is incorrect
 
     approval()  # Clear screen before starting inputs
